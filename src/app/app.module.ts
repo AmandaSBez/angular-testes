@@ -12,12 +12,19 @@ import { DataTableComponent } from './data-table/data-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { NavComponent } from './components/template/nav/nav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { HomeComponent } from './views/home/home.component';
+import { CadastroComponent } from './views/cadastro/cadastro.component'; //importar
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DataTableComponent
+    DataTableComponent,
+    NavComponent,
+    HomeComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatCardModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
