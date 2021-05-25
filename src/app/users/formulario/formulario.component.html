@@ -1,0 +1,24 @@
+<form [formGroup]="formUser">
+
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <br>
+      <input type="text" class="form-control" name="name" id="nome" formControlName="nome">
+    </div>
+
+    <div class="form-group">
+        <label for="sobrenome">Sobrenome</label>
+        <br>
+        <input type="text" class="form-control" name="surname" id="sobrenome" formControlName="sobrenome">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <br>
+        <input type="text" class="form-control" name="email" id="email" formControlName="email">
+      </div>
+
+      <input type="submit" class="btn btn-primary mt-4" value="Salvar">
+      <a href="#" class="btn btn-secondary mt-4 ml-2">Cancelar</a>
+
+</form>

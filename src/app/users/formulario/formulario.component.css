@@ -1,0 +1,12 @@
+form {
+    width: auto;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+form div {
+    display: block;
+    padding: 10px;
+}

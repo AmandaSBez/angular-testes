@@ -16,6 +16,8 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HomeComponent } from './views/home/home.component';
 import { CadastroComponent } from './views/cadastro/cadastro.component'; //importar
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormularioComponent } from './users/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { CadastroComponent } from './views/cadastro/cadastro.component'; //impor
     DataTableComponent,
     NavComponent,
     HomeComponent,
-    CadastroComponent
+    CadastroComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { CadastroComponent } from './views/cadastro/cadastro.component'; //impor
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatSidenavModule
+    MatSidenavModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
